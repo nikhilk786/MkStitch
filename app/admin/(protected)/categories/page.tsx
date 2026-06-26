@@ -32,26 +32,26 @@ export default async function AdminCategoriesPage({
     <main>
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-xs font-bold tracking-[0.24em] text-[#a44fa7] uppercase">
+          <p className="text-xs font-bold tracking-[0.24em] text-[#694E4E] uppercase">
             Catalog
           </p>
           <h1 className="mt-3 font-editorial text-4xl font-bold">
             Categories
           </h1>
-          <p className="mt-3 text-[#765c79]">
+          <p className="mt-3 text-[#694E4E]">
             Organize products into manageable storefront groups.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
           <Link
             href="/admin/categories/bulk-upload"
-            className="inline-flex w-fit rounded-full border border-[#e3cadf] px-5 py-3 text-sm font-semibold text-[#765c79] transition-colors hover:bg-[#ffe3e3]"
+            className="inline-flex w-fit rounded-full border border-[#694E4E] px-5 py-3 text-sm font-semibold text-[#694E4E] transition-colors hover:bg-[#FFCEE3]"
           >
             CSV upload
           </Link>
           <Link
             href="/admin/categories/new"
-            className="inline-flex w-fit rounded-full bg-gradient-to-r from-[#6f3473] to-[#a44fa7] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+            className="inline-flex w-fit rounded-full bg-gradient-to-r from-[#694E4E] to-[#694E4E] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
           >
             Add category
           </Link>
@@ -101,7 +101,7 @@ export default async function AdminCategoriesPage({
                       <div className="flex justify-end gap-2">
                         <Link
                           href={`/admin/categories/${category.id}/edit`}
-                          className="rounded-full border border-[#e3cadf] px-3 py-1.5 text-xs font-semibold text-[#765c79] transition-colors hover:bg-[#ffe3e3]"
+                          className="rounded-full border border-[#694E4E] px-3 py-1.5 text-xs font-semibold text-[#694E4E] transition-colors hover:bg-[#FFCEE3]"
                         >
                           Edit
                         </Link>

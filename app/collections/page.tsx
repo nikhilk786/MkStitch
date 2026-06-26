@@ -11,7 +11,7 @@ const fallbackCollections = [
   ["Office Wear", "Elegant kurtis designed for polished workdays."],
   ["Designer Kurtis", "Statement silhouettes with boutique-level finishing."],
   ["Cotton Comfort", "Breathable textures for warm days and slow weekends."],
-  ["New Arrivals", "Fresh edits from the latest ClothWeb collection."],
+  ["New Arrivals", "Fresh edits from the latest MKSTITCH collection."],
 ];
 
 export default async function CollectionsPage() {
@@ -28,13 +28,13 @@ export default async function CollectionsPage() {
     .orderBy(asc(categories.name));
 
   return (
-    <main className="bg-[#fbf8ef] text-[#5C4F4A]">
-      <section className="relative overflow-hidden bg-[#E4D6A9]">
+    <main className="bg-[#F5F5F5] text-[#694E4E]">
+      <section className="relative overflow-hidden bg-[#FFCEE3]">
         <div className="boutique-gradient absolute inset-0 opacity-75" />
         <div className="boutique-grid absolute inset-0 opacity-35" />
         <div className="relative mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <Reveal className="max-w-3xl">
-            <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#978F66]">
+            <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#694E4E]">
               Collections
             </p>
             <h1 className="mt-5 font-editorial text-5xl font-semibold leading-tight sm:text-6xl">
@@ -55,7 +55,7 @@ export default async function CollectionsPage() {
               <StaggerItem key={category.id}>
                 <Link
                   href={`/shop?category=${category.slug}`}
-                  className="group boutique-shadow relative block min-h-96 overflow-hidden rounded-2xl border border-[#978F66]/18 bg-[#E4D6A9]"
+                  className="group boutique-shadow relative block min-h-96 overflow-hidden rounded-2xl border border-[#694E4E]/18 bg-[#FFCEE3]"
                 >
                   {category.image ? (
                     <Image
@@ -68,9 +68,9 @@ export default async function CollectionsPage() {
                   ) : (
                     <div className="boutique-gradient absolute inset-0" />
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#5C4F4A]/78 via-[#5C4F4A]/12 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#694E4E]/78 via-[#694E4E]/12 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-7 text-white">
-                    <span className="inline-flex rounded-full bg-[#fffdf7]/20 px-3 py-1 text-xs font-semibold backdrop-blur">
+                    <span className="inline-flex rounded-full bg-[#FFFFFF]/20 px-3 py-1 text-xs font-semibold backdrop-blur">
                       Shop category
                     </span>
                     <h2 className="mt-4 font-editorial text-3xl font-semibold">
@@ -92,11 +92,11 @@ export default async function CollectionsPage() {
               <StaggerItem key={title}>
                 <Link
                   href="/shop"
-                  className="boutique-shadow group relative flex min-h-80 flex-col justify-between overflow-hidden rounded-2xl border border-[#978F66]/18 bg-[#fffdf7] p-7"
+                  className="boutique-shadow group relative flex min-h-80 flex-col justify-between overflow-hidden rounded-2xl border border-[#694E4E]/18 bg-[#FFFFFF] p-7"
                 >
                   <div className="boutique-gradient absolute inset-0 opacity-65 transition group-hover:scale-105" />
                   <div className="relative">
-                    <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#978F66]">
+                    <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#694E4E]">
                       0{index + 1}
                     </p>
                     <h2 className="mt-5 font-editorial text-4xl font-semibold">

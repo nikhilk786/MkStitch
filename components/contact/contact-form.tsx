@@ -12,7 +12,7 @@ const initialState: EmailActionState = {
 };
 
 const inputClass =
-  "mt-2 h-12 w-full rounded-full border border-[#978F66]/22 bg-[#fbf8ef] px-4 text-sm outline-none transition focus:border-[#978F66]";
+  "mt-2 h-12 w-full rounded-full border border-[#694E4E]/22 bg-[#F5F5F5] px-4 text-sm outline-none transition focus:border-[#694E4E]";
 
 export function ContactForm() {
   const [state, formAction, isPending] = useActionState(
@@ -21,7 +21,7 @@ export function ContactForm() {
   );
 
   return (
-    <form action={formAction} className="boutique-shadow rounded-[2rem] border border-[#978F66]/18 bg-[#fffdf7] p-6 sm:p-8">
+    <form action={formAction} className="boutique-shadow rounded-[2rem] border border-[#694E4E]/18 bg-[#FFFFFF] p-6 sm:p-8">
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="text-sm font-semibold">
@@ -85,13 +85,13 @@ export function ContactForm() {
           rows={6}
           required
           maxLength={3000}
-          className="mt-2 w-full resize-none rounded-2xl border border-[#978F66]/22 bg-[#fbf8ef] px-4 py-3 text-sm outline-none transition focus:border-[#978F66]"
+          className="mt-2 w-full resize-none rounded-2xl border border-[#694E4E]/22 bg-[#F5F5F5] px-4 py-3 text-sm outline-none transition focus:border-[#694E4E]"
         />
       </div>
       <button
         type="submit"
         disabled={isPending}
-        className="mt-6 inline-flex h-13 w-full items-center justify-center rounded-full bg-[#5C4F4A] px-7 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#978F66] disabled:cursor-wait disabled:opacity-70 sm:w-auto"
+        className="mt-6 inline-flex h-13 w-full items-center justify-center rounded-full bg-[#694E4E] px-7 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#694E4E] disabled:cursor-wait disabled:opacity-70 sm:w-auto"
       >
         {isPending ? "Sending..." : "Send Message"}
       </button>

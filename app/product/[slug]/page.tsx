@@ -15,7 +15,7 @@ export default async function ProductDetailPage({
   }
 
   return (
-    <main className="bg-[#fbf8ef]">
+    <main className="bg-[#F5F5F5]">
       <ProductDetailClient product={product} />
     </main>
   );

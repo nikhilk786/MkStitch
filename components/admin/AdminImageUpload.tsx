@@ -85,7 +85,7 @@ export function AdminImageUpload({
   }
 
   return (
-    <div className="mt-2 rounded-2xl border border-[#ead8e6] bg-[#fff8fb] p-4">
+    <div className="mt-2 rounded-2xl border border-[#694E4E] bg-[#fff8fb] p-4">
       <input
         ref={inputRef}
         type="file"
@@ -94,7 +94,7 @@ export function AdminImageUpload({
         disabled={uploading}
         className={
           simple
-            ? "block w-full cursor-pointer rounded-xl border border-[#e3cadf] bg-white text-sm text-[#765c79] file:mr-4 file:border-0 file:bg-[#6f3473] file:px-4 file:py-3 file:font-semibold file:text-white disabled:cursor-wait disabled:opacity-60"
+            ? "block w-full cursor-pointer rounded-xl border border-[#694E4E] bg-white text-sm text-[#694E4E] file:mr-4 file:border-0 file:bg-[#694E4E] file:px-4 file:py-3 file:font-semibold file:text-white disabled:cursor-wait disabled:opacity-60"
             : "sr-only"
         }
       />
@@ -121,7 +121,7 @@ export function AdminImageUpload({
           type="button"
           onClick={() => inputRef.current?.click()}
           disabled={uploading}
-          className="mt-4 inline-flex rounded-full bg-[#6f3473] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#a44fa7] disabled:cursor-wait disabled:opacity-60"
+          className="mt-4 inline-flex rounded-full bg-[#694E4E] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#694E4E] disabled:cursor-wait disabled:opacity-60"
         >
           {uploading
             ? "Uploading image..."

@@ -36,7 +36,7 @@ export function AdminLoginForm({
       ) : null}
 
       <div>
-        <label htmlFor="admin-email" className="text-sm font-semibold text-[#38243c]">
+        <label htmlFor="admin-email" className="text-sm font-semibold text-[#694E4E]">
           Email
         </label>
         <input
@@ -45,7 +45,7 @@ export function AdminLoginForm({
           type="email"
           autoComplete="email"
           required
-          className="mt-2 h-12 w-full rounded-2xl border border-[#ead8e6] bg-white px-4 text-sm text-[#38243c] outline-none transition focus:border-[#dd7bdf] focus:ring-4 focus:ring-[#f9b2d7]/15"
+          className="mt-2 h-12 w-full rounded-2xl border border-[#694E4E] bg-white px-4 text-sm text-[#694E4E] outline-none transition focus:border-[#694E4E] focus:ring-4 focus:ring-[#FFCEE3]/15"
           placeholder="admin@example.com"
         />
       </div>
@@ -53,7 +53,7 @@ export function AdminLoginForm({
       <div>
         <label
           htmlFor="admin-password"
-          className="text-sm font-semibold text-[#38243c]"
+          className="text-sm font-semibold text-[#694E4E]"
         >
           Password
         </label>
@@ -63,7 +63,7 @@ export function AdminLoginForm({
           type="password"
           autoComplete="current-password"
           required
-          className="mt-2 h-12 w-full rounded-2xl border border-[#ead8e6] bg-white px-4 text-sm text-[#38243c] outline-none transition focus:border-[#dd7bdf] focus:ring-4 focus:ring-[#f9b2d7]/15"
+          className="mt-2 h-12 w-full rounded-2xl border border-[#694E4E] bg-white px-4 text-sm text-[#694E4E] outline-none transition focus:border-[#694E4E] focus:ring-4 focus:ring-[#FFCEE3]/15"
           placeholder="Your password"
         />
       </div>
@@ -71,7 +71,7 @@ export function AdminLoginForm({
       <button
         type="submit"
         disabled={pending}
-        className="h-12 w-full rounded-2xl bg-gradient-to-r from-[#6f3473] to-[#a44fa7] px-6 text-sm font-semibold text-white transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
+        className="h-12 w-full rounded-2xl bg-gradient-to-r from-[#694E4E] to-[#694E4E] px-6 text-sm font-semibold text-white transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
       >
         {pending ? "Signing in..." : "Login to admin"}
       </button>

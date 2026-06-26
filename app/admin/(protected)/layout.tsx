@@ -19,7 +19,7 @@ export default async function AdminLayout({
   }
 
   return (
-    <div className="min-h-full bg-[#fff7fa] text-[#38243c]">
+    <div className="min-h-full bg-[#F5F5F5] text-[#694E4E]">
       <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[220px_1fr] lg:px-8">
         <AdminSidebar email={session.user.email} />
         <div className="min-w-0">{children}</div>

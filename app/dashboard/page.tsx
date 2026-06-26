@@ -21,19 +21,19 @@ type DashboardAddress = {
 
 const placeholderOrders: DashboardOrder[] = [
   {
-    id: "CW-1024",
+    id: "MK-1024",
     status: "Processing",
     total: "Rs. 3,499",
     date: "19 Jun 2026",
   },
   {
-    id: "CW-1018",
+    id: "MK-1018",
     status: "Delivered",
     total: "Rs. 2,199",
     date: "12 Jun 2026",
   },
   {
-    id: "CW-1009",
+    id: "MK-1009",
     status: "Shipped",
     total: "Rs. 4,250",
     date: "04 Jun 2026",
@@ -74,11 +74,11 @@ function DashboardCard({
   action?: ReactNode;
 }) {
   return (
-    <section className="boutique-shadow rounded-2xl border border-[#978F66]/18 bg-[#fffdf7] p-5 sm:p-6">
+    <section className="boutique-shadow rounded-2xl border border-[#694E4E]/18 bg-[#FFFFFF] p-5 sm:p-6">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <h2 className="font-editorial text-xl font-semibold text-[#5C4F4A]">{title}</h2>
-          <p className="mt-1 text-sm text-[#5C4F4A]/65">{description}</p>
+          <h2 className="font-editorial text-xl font-semibold text-[#694E4E]">{title}</h2>
+          <p className="mt-1 text-sm text-[#694E4E]/65">{description}</p>
         </div>
         {action ? <div className="shrink-0">{action}</div> : null}
       </div>
@@ -97,7 +97,7 @@ function SecondaryLink({
   return (
     <Link
       href={href}
-      className="inline-flex h-10 items-center justify-center rounded-full border border-[#978F66]/25 px-4 text-sm font-semibold text-[#5C4F4A] transition-colors hover:border-[#978F66] hover:bg-[#978F66] hover:text-white"
+      className="inline-flex h-10 items-center justify-center rounded-full border border-[#694E4E]/25 px-4 text-sm font-semibold text-[#694E4E] transition-colors hover:border-[#694E4E] hover:bg-[#694E4E] hover:text-white"
     >
       {children}
     </Link>
@@ -120,19 +120,19 @@ export default async function DashboardPage() {
   }
 
   const user = session.user;
-  const userName = user.name ?? "ClothWeb user";
+  const userName = user.name ?? "MKSTITCH user";
   const userEmail = user.email ?? "Email not available";
 
   return (
-    <main className="min-h-screen bg-[#fbf8ef] text-[#5C4F4A]">
+    <main className="min-h-screen bg-[#F5F5F5] text-[#694E4E]">
       <section className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
-        <div className="boutique-gradient boutique-shadow flex flex-col gap-6 rounded-[2rem] border border-[#978F66]/20 px-5 py-8 text-[#5C4F4A] sm:px-8 lg:flex-row lg:items-center lg:justify-between">
+        <div className="boutique-gradient boutique-shadow flex flex-col gap-6 rounded-[2rem] border border-[#694E4E]/20 px-5 py-8 text-[#694E4E] sm:px-8 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex items-center gap-4">
-            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-[#978F66]/25 bg-[#fffdf7]/70 text-xl font-bold text-[#978F66]">
+            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-[#694E4E]/25 bg-[#FFFFFF]/70 text-xl font-bold text-[#694E4E]">
               {getInitials(user.name)}
             </div>
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#978F66]">Account overview</p>
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#694E4E]">Account overview</p>
               <h1 className="mt-2 font-editorial text-4xl font-semibold">
                 My Boutique Dashboard
               </h1>
@@ -153,24 +153,24 @@ export default async function DashboardPage() {
           >
             <div className="space-y-4">
               <div>
-                <p className="text-xs font-semibold text-[#5C4F4A]/55">User name</p>
-                <p className="mt-1 text-base font-semibold text-[#5C4F4A]">
+                <p className="text-xs font-semibold text-[#694E4E]/55">User name</p>
+                <p className="mt-1 text-base font-semibold text-[#694E4E]">
                   {userName}
                 </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-[#5C4F4A]/55">Email</p>
-                <p className="mt-1 break-words text-base font-semibold text-[#5C4F4A]">
+                <p className="text-xs font-semibold text-[#694E4E]/55">Email</p>
+                <p className="mt-1 break-words text-base font-semibold text-[#694E4E]">
                   {userEmail}
                 </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-[#5C4F4A]/55">Phone</p>
-                <p className="mt-1 text-base font-semibold text-[#5C4F4A]">
+                <p className="text-xs font-semibold text-[#694E4E]/55">Phone</p>
+                <p className="mt-1 text-base font-semibold text-[#694E4E]">
                   Not added yet
                 </p>
               </div>
-              <div className="rounded-2xl bg-[#E4D6A9]/35 p-4 text-sm text-[#5C4F4A]/70">
+              <div className="rounded-2xl bg-[#FFCEE3]/35 p-4 text-sm text-[#694E4E]/70">
                 Profile phone/edit fields are ready for the future profile API.
               </div>
             </div>
@@ -186,42 +186,42 @@ export default async function DashboardPage() {
               </div>
             }
           >
-            <div className="overflow-hidden rounded-2xl border border-[#978F66]/18">
-              <div className="hidden grid-cols-[1fr_1fr_1fr_1fr] bg-[#E4D6A9]/35 px-4 py-3 text-xs font-semibold text-[#5C4F4A]/65 sm:grid">
+            <div className="overflow-hidden rounded-2xl border border-[#694E4E]/18">
+              <div className="hidden grid-cols-[1fr_1fr_1fr_1fr] bg-[#FFCEE3]/35 px-4 py-3 text-xs font-semibold text-[#694E4E]/65 sm:grid">
                 <span>Order ID</span>
                 <span>Status</span>
                 <span>Total</span>
                 <span>Date</span>
               </div>
-              <div className="divide-y divide-[#978F66]/16">
+              <div className="divide-y divide-[#694E4E]/16">
                 {placeholderOrders.map((order) => (
                   <div
                     key={order.id}
                     className="grid gap-3 px-4 py-4 text-sm sm:grid-cols-[1fr_1fr_1fr_1fr] sm:items-center"
                   >
                     <div>
-                      <span className="text-xs font-semibold text-[#5C4F4A]/55 sm:hidden">
+                      <span className="text-xs font-semibold text-[#694E4E]/55 sm:hidden">
                         Order ID
                       </span>
-                      <p className="font-semibold text-[#5C4F4A]">{order.id}</p>
+                      <p className="font-semibold text-[#694E4E]">{order.id}</p>
                     </div>
                     <div>
-                      <span className="text-xs font-semibold text-[#5C4F4A]/55 sm:hidden">
+                      <span className="text-xs font-semibold text-[#694E4E]/55 sm:hidden">
                         Status
                       </span>
-                      <p className="font-medium text-[#5C4F4A]/75">{order.status}</p>
+                      <p className="font-medium text-[#694E4E]/75">{order.status}</p>
                     </div>
                     <div>
-                      <span className="text-xs font-semibold text-[#5C4F4A]/55 sm:hidden">
+                      <span className="text-xs font-semibold text-[#694E4E]/55 sm:hidden">
                         Total
                       </span>
-                      <p className="font-medium text-[#5C4F4A]/75">{order.total}</p>
+                      <p className="font-medium text-[#694E4E]/75">{order.total}</p>
                     </div>
                     <div>
-                      <span className="text-xs font-semibold text-[#5C4F4A]/55 sm:hidden">
+                      <span className="text-xs font-semibold text-[#694E4E]/55 sm:hidden">
                         Date
                       </span>
-                      <p className="font-medium text-[#5C4F4A]/75">{order.date}</p>
+                      <p className="font-medium text-[#694E4E]/75">{order.date}</p>
                     </div>
                   </div>
                 ))}
@@ -239,16 +239,16 @@ export default async function DashboardPage() {
               </div>
             }
           >
-            <div className="rounded-2xl border border-[#978F66]/18 bg-[#E4D6A9]/30 p-5">
-              <p className="text-base font-semibold text-[#5C4F4A]">
+            <div className="rounded-2xl border border-[#694E4E]/18 bg-[#FFCEE3]/30 p-5">
+              <p className="text-base font-semibold text-[#694E4E]">
                 {placeholderAddress.line1}
               </p>
               {placeholderAddress.line2 ? (
-                <p className="mt-2 text-sm text-[#5C4F4A]/70">
+                <p className="mt-2 text-sm text-[#694E4E]/70">
                   {placeholderAddress.line2}
                 </p>
               ) : null}
-              <p className="mt-4 text-sm font-medium text-[#5C4F4A]/75">
+              <p className="mt-4 text-sm font-medium text-[#694E4E]/75">
                 {placeholderAddress.city}, {placeholderAddress.state}{" "}
                 {placeholderAddress.pincode}
               </p>

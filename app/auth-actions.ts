@@ -113,8 +113,6 @@ export async function loginAction(
     return { error: "Email aur password dono required hain." };
   }
 
-  let redirectUrl = "/dashboard";
-
   try {
     const result = await signIn("credentials", {
       email,
@@ -129,8 +127,6 @@ export async function loginAction(
       if (resultUrl.searchParams.has("error")) {
         return { error: "Email ya password galat hai." };
       }
-
-      redirectUrl = result;
     }
   } catch (error) {
     if (error instanceof AuthError) {
@@ -144,7 +140,7 @@ export async function loginAction(
     throw error;
   }
 
-  redirect(redirectUrl);
+  redirect("/dashboard");
 }
 
 export async function logoutAction() {

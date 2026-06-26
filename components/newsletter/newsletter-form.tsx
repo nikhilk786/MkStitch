@@ -20,7 +20,7 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
 
   return (
     <form action={formAction} className={compact ? "mt-5" : "flex flex-col gap-3 sm:flex-row"}>
-      <div className={compact ? "flex overflow-hidden rounded-full border border-[#978F66]/25 bg-[#fffdf7]/55 p-1" : "contents"}>
+      <div className={compact ? "flex overflow-hidden rounded-full border border-[#694E4E]/25 bg-[#FFFFFF]/55 p-1" : "contents"}>
         <label htmlFor={id} className="sr-only">
           Email address
         </label>
@@ -33,8 +33,8 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
           placeholder="Email address"
           className={
             compact
-              ? "min-w-0 flex-1 bg-transparent px-4 text-sm outline-none placeholder:text-[#5C4F4A]/60"
-              : "h-13 flex-1 rounded-full border border-[#978F66]/25 bg-[#fffdf7]/75 px-5 text-sm text-[#5C4F4A] outline-none placeholder:text-[#5C4F4A]/55 focus:border-[#978F66]"
+              ? "min-w-0 flex-1 bg-transparent px-4 text-sm outline-none placeholder:text-[#694E4E]/60"
+              : "h-13 flex-1 rounded-full border border-[#694E4E]/25 bg-[#FFFFFF]/75 px-5 text-sm text-[#694E4E] outline-none placeholder:text-[#694E4E]/55 focus:border-[#694E4E]"
           }
         />
         <button
@@ -42,8 +42,8 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
           disabled={isPending}
           className={
             compact
-              ? "rounded-full bg-[#978F66] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#5C4F4A] disabled:cursor-wait disabled:opacity-70"
-              : "h-13 rounded-full bg-[#5C4F4A] px-7 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#978F66] disabled:cursor-wait disabled:opacity-70"
+              ? "rounded-full bg-[#694E4E] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#694E4E] disabled:cursor-wait disabled:opacity-70"
+              : "h-13 rounded-full bg-[#694E4E] px-7 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#694E4E] disabled:cursor-wait disabled:opacity-70"
           }
         >
           {isPending ? "Joining..." : compact ? "Join" : "Join the list"}

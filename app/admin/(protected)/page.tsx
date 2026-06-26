@@ -71,13 +71,13 @@ export default async function AdminPage() {
 
   return (
     <main>
-      <p className="text-xs font-bold tracking-[0.24em] text-[#a44fa7] uppercase">
+      <p className="text-xs font-bold tracking-[0.24em] text-[#694E4E] uppercase">
         Boutique overview
       </p>
       <h1 className="mt-3 font-editorial text-4xl font-bold">
         Collection administration
       </h1>
-      <p className="mt-3 max-w-2xl text-[#765c79]">
+      <p className="mt-3 max-w-2xl text-[#694E4E]">
         Manage the categories and products stored in your PostgreSQL database.
       </p>
 
@@ -88,14 +88,14 @@ export default async function AdminPage() {
             href={card.href}
             className="group boutique-shadow rounded-[2rem] border border-[#f0d9e8] bg-white p-6 transition hover:-translate-y-1 hover:border-[#e6b9dc]"
           >
-            <p className="text-xs font-bold tracking-[0.15em] text-[#a44fa7] uppercase">{card.label}</p>
+            <p className="text-xs font-bold tracking-[0.15em] text-[#694E4E] uppercase">{card.label}</p>
             <p className="mt-3 truncate font-editorial text-3xl font-bold">
               {card.value}
             </p>
             <p className="mt-3 min-h-10 text-sm leading-5 text-[#8f7691]">
               {card.description}
             </p>
-            <p className="mt-5 text-sm font-semibold text-[#6f3473]">
+            <p className="mt-5 text-sm font-semibold text-[#694E4E]">
               View details{" "}
               <span className="inline-block transition-transform group-hover:translate-x-1">
                 →

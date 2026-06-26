@@ -27,7 +27,7 @@ type CategoryOption = {
 
 const initialState: AdminFormState = {};
 const inputClass =
-  "mt-2 w-full rounded-2xl border border-[#ead8e6] bg-white px-4 py-3 text-sm text-[#38243c] outline-none transition focus:border-[#dd7bdf] focus:ring-4 focus:ring-[#f9b2d7]/15";
+  "mt-2 w-full rounded-2xl border border-[#694E4E] bg-white px-4 py-3 text-sm text-[#694E4E] outline-none transition focus:border-[#694E4E] focus:ring-4 focus:ring-[#FFCEE3]/15";
 
 export function ProductForm({
   action,
@@ -188,7 +188,7 @@ export function ProductForm({
       </div>
 
       <div className="mt-6 flex flex-wrap gap-6">
-        <label className="flex items-center gap-3 text-sm font-semibold text-[#38243c]">
+        <label className="flex items-center gap-3 text-sm font-semibold text-[#694E4E]">
           <input
             type="checkbox"
             name="isFeatured"
@@ -197,7 +197,7 @@ export function ProductForm({
           />
           Featured
         </label>
-        <label className="flex items-center gap-3 text-sm font-semibold text-[#38243c]">
+        <label className="flex items-center gap-3 text-sm font-semibold text-[#694E4E]">
           <input
             type="checkbox"
             name="isActive"
@@ -212,13 +212,13 @@ export function ProductForm({
         <button
           type="submit"
           disabled={pending || imageUploading}
-          className="rounded-full bg-gradient-to-r from-[#6f3473] to-[#a44fa7] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
+          className="rounded-full bg-gradient-to-r from-[#694E4E] to-[#694E4E] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
         >
           {imageUploading ? "Uploading image..." : pending ? "Saving..." : submitLabel}
         </button>
         <Link
           href="/admin/products"
-          className="rounded-full border border-[#e3cadf] px-6 py-3 text-sm font-semibold text-[#765c79] transition-colors hover:bg-[#ffe3e3]"
+          className="rounded-full border border-[#694E4E] px-6 py-3 text-sm font-semibold text-[#694E4E] transition-colors hover:bg-[#FFCEE3]"
         >
           Cancel
         </Link>
@@ -240,7 +240,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="text-sm font-semibold text-[#38243c]">{label}</label>
+      <label className="text-sm font-semibold text-[#694E4E]">{label}</label>
       {children}
       {error ? (
         <p className="mt-2 text-sm font-medium text-red-600">{error}</p>

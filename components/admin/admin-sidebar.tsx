@@ -21,7 +21,7 @@ export function AdminSidebar({
   const pathname = usePathname();
 
   return (
-    <aside className="boutique-shadow h-fit rounded-[2rem] bg-[#38243c] p-5 text-white lg:sticky lg:top-28">
+    <aside className="boutique-shadow h-fit rounded-[2rem] bg-[#694E4E] p-5 text-white lg:sticky lg:top-28">
       <div className="flex items-start justify-between gap-4 lg:block">
         <div>
           <Link
@@ -30,11 +30,11 @@ export function AdminSidebar({
           >
             Boutique Admin
           </Link>
-          <p className="mt-2 max-w-52 truncate text-xs text-[#cdb9cf]">
+          <p className="mt-2 max-w-52 truncate text-xs text-[#F5F5F5]">
             {email ?? "Administrator"}
           </p>
         </div>
-        <span className="rounded-full bg-[#f9b2d7]/15 px-3 py-1 text-[10px] font-semibold tracking-wider text-[#f9b2d7] uppercase lg:mt-4 lg:inline-flex">
+        <span className="rounded-full bg-[#FFCEE3]/15 px-3 py-1 text-[10px] font-semibold tracking-wider text-[#FFCEE3] uppercase lg:mt-4 lg:inline-flex">
           Admin
         </span>
       </div>
@@ -55,8 +55,8 @@ export function AdminSidebar({
               aria-current={isActive ? "page" : undefined}
               className={`rounded-2xl px-4 py-3 text-sm font-semibold transition-colors ${
                 isActive
-                  ? "bg-gradient-to-r from-[#f9b2d7] to-[#b5baff] text-[#38243c]"
-                  : "text-[#e8d7e9] hover:bg-white/10 hover:text-white"
+                  ? "bg-gradient-to-r from-[#FFCEE3] to-[#F5F5F5] text-[#694E4E]"
+                  : "text-[#F5F5F5] hover:bg-white/10 hover:text-white"
               }`}
             >
               {item.label}

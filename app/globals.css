@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbf8ef;
-  --foreground: #5c4f4a;
-  --brand-primary: #978f66;
-  --brand-secondary: #e4d6a9;
-  --brand-ink: #5c4f4a;
-  --brand-ivory: #fffdf7;
-  --brand-soft: #f3ecd5;
-  --brand-line: rgba(151, 143, 102, 0.24);
+  --background: #F5F5F5;
+  --foreground: #694e4e;
+  --brand-primary: #ffcee3;
+  --brand-secondary: #F5F5F5;
+  --brand-ink: #694e4e;
+  --brand-ivory: #FFFFFF;
+  --brand-soft: #FFCEE3;
+  --brand-line: rgba(105, 78, 78, 0.18);
 }
 
 @theme inline {
@@ -29,8 +29,8 @@ html {
 }
 
 ::selection {
-  background: #e4d6a9;
-  color: #5c4f4a;
+  background: #ffcee3;
+  color: #694e4e;
 }
 
 .font-editorial {
@@ -39,19 +39,58 @@ html {
 
 .boutique-gradient {
   background:
-    radial-gradient(circle at 18% 22%, rgba(255, 253, 247, 0.92), transparent 32%),
-    linear-gradient(135deg, #fffdf7 0%, #e4d6a9 48%, #978f66 100%);
+    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.94), transparent 34%),
+    linear-gradient(135deg, #FFFFFF 0%, #FFCEE3 58%, #F5F5F5 100%);
 }
 
 .boutique-shadow {
-  box-shadow: 0 24px 70px rgba(92, 79, 74, 0.12);
+  box-shadow: 0 24px 70px rgba(105, 78, 78, 0.12);
 }
 
 .boutique-grid {
   background-image:
-    linear-gradient(rgba(151, 143, 102, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(151, 143, 102, 0.12) 1px, transparent 1px);
+    linear-gradient(rgba(105, 78, 78, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(105, 78, 78, 0.08) 1px, transparent 1px);
   background-size: 44px 44px;
+}
+
+.mk-glass {
+  border: 1px solid rgba(105, 78, 78, 0.14);
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: 0 20px 60px rgba(105, 78, 78, 0.1);
+  backdrop-filter: blur(22px);
+}
+
+.mk-underline {
+  position: relative;
+}
+
+.mk-underline::after {
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+  left: 0;
+  height: 1px;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: center;
+  background: currentColor;
+  transition: transform 220ms ease;
+}
+
+.mk-underline:hover::after,
+.mk-underline[data-active="true"]::after {
+  transform: scaleX(1);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .luxury-border {

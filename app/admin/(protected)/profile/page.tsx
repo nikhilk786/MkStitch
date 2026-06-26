@@ -39,26 +39,26 @@ export default async function AdminProfilePage() {
 
   return (
     <main>
-      <p className="text-xs font-bold tracking-[0.24em] text-[#a44fa7] uppercase">
+      <p className="text-xs font-bold tracking-[0.24em] text-[#694E4E] uppercase">
         Account
       </p>
       <h1 className="mt-3 font-editorial text-4xl font-bold">
         Admin profile
       </h1>
-      <p className="mt-3 text-[#765c79]">
+      <p className="mt-3 text-[#694E4E]">
         Your authenticated administrator account details.
       </p>
 
       <section className="boutique-shadow mt-8 overflow-hidden rounded-[2rem] border border-[#f0d9e8] bg-white">
-        <div className="boutique-gradient p-6 text-[#38243c] sm:p-8">
+        <div className="boutique-gradient p-6 text-[#694E4E] sm:p-8">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
-            <div className="flex size-20 shrink-0 items-center justify-center rounded-full bg-white/75 text-2xl font-bold text-[#6f3473]">
+            <div className="flex size-20 shrink-0 items-center justify-center rounded-full bg-white/75 text-2xl font-bold text-[#694E4E]">
               {initials(user.name)}
             </div>
             <div>
               <h2 className="font-editorial text-3xl font-bold">{user.name}</h2>
               <p className="mt-1 text-sm text-[#684d6c]">{user.email}</p>
-              <span className="mt-3 inline-flex rounded-full bg-white/55 px-3 py-1 text-xs font-semibold text-[#6f3473]">
+              <span className="mt-3 inline-flex rounded-full bg-white/55 px-3 py-1 text-xs font-semibold text-[#694E4E]">
                 {user.role}
               </span>
             </div>

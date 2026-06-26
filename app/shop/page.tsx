@@ -6,13 +6,13 @@ export default async function ShopPage() {
   const products = await getActiveProducts();
 
   return (
-    <main className="min-h-screen bg-[#fbf8ef] text-[#5C4F4A]">
-      <section className="relative overflow-hidden bg-[#E4D6A9]">
+    <main className="min-h-screen bg-[#F5F5F5] text-[#694E4E]">
+      <section className="relative overflow-hidden bg-[#FFCEE3]">
         <div className="boutique-gradient absolute inset-0 opacity-65" />
         <div className="boutique-grid absolute inset-0 opacity-35" />
         <div className="relative mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <Reveal>
-            <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#978F66]">
+            <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#694E4E]">
               The Kurti collection
             </p>
             <div className="mt-5 grid gap-6 lg:grid-cols-[0.85fr_1fr] lg:items-end">
@@ -31,7 +31,7 @@ export default async function ShopPage() {
       <section className="mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <Reveal className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#978F66]">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#694E4E]">
               {products.length} handpicked styles
             </p>
             <h2 className="mt-2 font-editorial text-3xl font-semibold">
@@ -50,7 +50,7 @@ export default async function ShopPage() {
             ))}
           </Stagger>
         ) : (
-          <div className="mt-8 rounded-2xl border border-[#978F66]/20 bg-[#fffdf7] px-6 py-16 text-center shadow-sm">
+          <div className="mt-8 rounded-2xl border border-[#694E4E]/20 bg-[#FFFFFF] px-6 py-16 text-center shadow-sm">
             <h2 className="font-editorial text-2xl font-semibold">
               New styles are being curated
             </h2>

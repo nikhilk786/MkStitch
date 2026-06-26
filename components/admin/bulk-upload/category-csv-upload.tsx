@@ -56,7 +56,7 @@ export function CategoryCsvUpload() {
       </div>
 
       <div className="mt-6">
-        <label htmlFor="category-csv" className="text-sm font-semibold text-[#38243c]">
+        <label htmlFor="category-csv" className="text-sm font-semibold text-[#694E4E]">
           Upload category CSV
         </label>
         <input
@@ -64,7 +64,7 @@ export function CategoryCsvUpload() {
           type="file"
           accept=".csv,text/csv"
           onChange={handleFileChange}
-          className="mt-3 block w-full cursor-pointer rounded-2xl border border-[#ead8e6] bg-white text-sm text-[#765c79] file:mr-4 file:border-0 file:bg-[#6f3473] file:px-4 file:py-3 file:font-semibold file:text-white"
+          className="mt-3 block w-full cursor-pointer rounded-2xl border border-[#694E4E] bg-white text-sm text-[#694E4E] file:mr-4 file:border-0 file:bg-[#694E4E] file:px-4 file:py-3 file:font-semibold file:text-white"
         />
       </div>
 
@@ -100,14 +100,14 @@ export function CategoryCsvUpload() {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-[#765c79]">
+          <p className="mt-3 text-xs text-[#694E4E]">
             Previewing {Math.min(items.length, 12)} of {items.length} rows.
           </p>
           <button
             type="button"
             onClick={handleUpload}
             disabled={isPending}
-            className="mt-6 rounded-full bg-gradient-to-r from-[#6f3473] to-[#a44fa7] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 disabled:cursor-wait disabled:opacity-60"
+            className="mt-6 rounded-full bg-gradient-to-r from-[#694E4E] to-[#694E4E] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 disabled:cursor-wait disabled:opacity-60"
           >
             {isPending ? "Uploading..." : "Upload Categories"}
           </button>
