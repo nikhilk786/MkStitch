@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fbf8ef;
+  --foreground: #5c4f4a;
+  --brand-primary: #978f66;
+  --brand-secondary: #e4d6a9;
+  --brand-ink: #5c4f4a;
+  --brand-ivory: #fffdf7;
+  --brand-soft: #f3ecd5;
+  --brand-line: rgba(151, 143, 102, 0.24);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-cormorant);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #e4d6a9;
+  color: #5c4f4a;
+}
+
+.font-editorial {
+  font-family: var(--font-cormorant), Georgia, "Times New Roman", serif;
+}
+
+.boutique-gradient {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(255, 253, 247, 0.92), transparent 32%),
+    linear-gradient(135deg, #fffdf7 0%, #e4d6a9 48%, #978f66 100%);
+}
+
+.boutique-shadow {
+  box-shadow: 0 24px 70px rgba(92, 79, 74, 0.12);
+}
+
+.boutique-grid {
+  background-image:
+    linear-gradient(rgba(151, 143, 102, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(151, 143, 102, 0.12) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.luxury-border {
+  border-color: var(--brand-line);
+}
+
+.text-brand {
+  color: var(--brand-ink);
+}
+
+.text-accent {
+  color: var(--brand-primary);
+}
+
+.bg-brand-soft {
+  background: var(--brand-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

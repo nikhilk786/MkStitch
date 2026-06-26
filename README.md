@@ -6,15 +6,27 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Authentication environment
+
+Set these server-only values in `.env.local` for local development and in your
+deployment platform's environment settings for production:
+
+```bash
+# Local development
+AUTH_URL=http://localhost:3000
+
+# Generate once with: npx auth secret
+AUTH_SECRET=replace-with-a-stable-random-secret
+```
+
+In production, set `AUTH_URL` to the app's real HTTPS domain. Keep
+`AUTH_SECRET` stable across builds, deploys, and server restarts so existing
+JWT sessions remain valid. Never expose either value through a `NEXT_PUBLIC_`
+environment variable or commit real secret values.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
